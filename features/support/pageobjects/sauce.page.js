@@ -6,6 +6,7 @@ class SaucePage {
     async open() {
         await browser.url('https://www.saucedemo.com/');
         await browser.maximizeWindow();
+        await browser.pause(1000);
     }
 
     async login(user, pass) {
